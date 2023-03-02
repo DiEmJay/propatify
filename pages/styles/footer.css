@@ -1,0 +1,68 @@
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding-bottom: 30px;
+   
+}
+.footer div{
+    text-align: center; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+   
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+   
+}
+form input{
+    width: 250px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    outline: none;
+    border: none;
+    display: flex;
+}
+form button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+}
+.col-3 p{
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.socials-logo{
+    height: 30px;
+    background-color: white;
+    border-radius: 15px;
+    
+
+
+    
+}
