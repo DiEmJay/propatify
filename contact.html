@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+  </head>
+
+  <body style="margin-top: 150px; background-color: gb(246, 246, 246)">
+    <main>
+      <header class="header">
+        <div class="header-left">
+          <img class="company-logo" src="Images/Propatify-logo.png" />
+        </div>
+        <div class="header-right">
+          <a href="index.html">
+            <button class="home-button">Home</button>
+          </a>
+          <a href="About.html">
+            <button class="about-us-button">About Us</button>
+          </a>
+          <a href="projects.html">
+            <button class="projects-button">Projects</button>
+          </a>
+          <a href="products.html">
+            <button class="products-button">Products</button>
+          </a>
+          <a href="contact.html">
+            <button class="contact-button">Contact Us</button>
+          </a>
+        </div>
+      </header>
+
+     <div class="contacts-frame">
+      <div class="contacts">
+        <div>
+          <h3>Have Questions ? </h3>
+          <h3>Consultations ? Call Us:</h3>
+        <p>+2348115068654, +2348180016757 </p>
+        <h3>Send Us An Email</h3>
+        <p>propatify@gmail.com, info@propatify.com.ng</p>
+        <h3>Find Our Office</h3>
+        <p>2A, Johnson Street, off Dipeolu street, Ikeja, Lagos.</p>
+        </div>
+       </div>
+     </div>
+     <div class="contact-container">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>GET IN TOUCH</h3>
+        <input type="text" id="Name" placeholder="Your Name" required>
+        <input type="email" id="Email" placeholder="Email Id" required>
+        <input type="text" id="phone" placeholder="Tel Num." required>
+        <textarea id="Message" rows="4" placeholder="How can we help you ?"></textarea>
+        <button type="submit">Send</button>
+      </form>
+     </div>
+     
+    </main>
+
+    <div class="footer">
+      <div class="col-1">
+        <h3>USEFUL LINKS</h3>
+        <a href="About.html">About Us</a>
+        <a href="projects.html">Projects</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="col-2">
+        <h3>NEWSLETTER</h3>
+        <form>
+          <input type="email" placeholder="Your Email Address" required />
+          <br />
+          <button type="submit">SUBSCRIBE NOW</button>
+        </form>
+      </div>
+      <div class="col-3">
+        <h3>CONTACT</h3>
+        <p>
+          <p>2A, Johnson Street, off Dipeolu street, Ikeja, Lagos.</p>
+
+        </p>
+        <img class="socials-logo" src="Images/facebook-logo.png" />
+        <img class="socials-logo" src="Images/instagram-logo.png" />
+        <img class="socials-logo" src="Images/twitter-logo.png" />
+      </div>
+    </div>
+  </main>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+      Host : "smtp.gmail.com",
+      Username : "propatify@gmail.com",
+      Password : "moreValue4life",
+      To : 'propatify@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "New Contact Form Enquiry",
+      Body : "Name: " + document.getElementById("Name").value
+      +"<br> Email: " + document.getElemetnById("Email").value
+      +"<br> Phone Num: " + document.getElemetnById("Phone").value
+      +"<br> Message: " + document.getElemetnById("Message").value
+  }).then(
+    message => alert("Message Sent Successfully")
+  );
+      }
+  </script>
+</body>
+</html>
