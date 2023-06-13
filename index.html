@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propatify</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <!---Header section starts-->
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <a href="#" class="logo"
+        ><img src="Images/Propatify-logo.png" alt=""
+      /></a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#why">Why choose us</a>
+        <a href="#projects">projects</a>
+        <a href="#propamart">PropaMart</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+    </header>
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+      <form action="">
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="enter your email" />
+        <input type="password" class="box" placeholder="enter your password" />
+        <input type="submit" value="login now" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">remember me</label>
+        <p>forgot password ? <a href="#">Click here</a></p>
+        <p>Don't have an account ? <a href="#">Register Now</a></p>
+      </form>
+    </div>
+
+    <!--Home Section starts-->
+    <section class="home" id="home">
+      <div class="content">
+        <div class="slider">
+          <figure>
+            <div class="slider-content">
+              <h3>Put your money to work for you</h3>
+              <p>
+                let your money do the hard work while you enjoy the outcome.
+              </p>
+            </div>
+            <div class="slider-content">
+              <h3>Bank your money on real gold</h3>
+              <p>
+                real estate guarantees you appreciation of your money while
+                earning passive income
+              </p>
+            </div>
+            <div class="slider-content">
+              <h3>Own your home with ease</h3>
+              <p>
+                you can become a property owner with ease by paying your rent
+                monthly
+              </p>
+            </div>
+            <div class="slider-content">
+              <h3>With little, you can create plenty with us</h3>
+              <p>
+                start your journey to wealth by investing in real estate today
+              </p>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="Images/realvid1.mp4"></span>
+        <span class="vid-btn" data-src="Images/realvid2.mp4"></span>
+        <span class="vid-btn" data-src="Images/realvid3.mp4"></span>
+        <span class="vid-btn" data-src="Images/realvid4.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="/Images/realvid1.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+    <!--Home Section ends-->
+
+    <!---About us section starts-->
+    <section class="about" id="about">
+      <h1 class="heading">
+        <span>a</span>
+        <span>b</span>
+        <span>o</span>
+        <span>u</span>
+        <span>t</span>
+        <span></span>
+        <span>u</span>
+        <span>s</span>
+      </h1>
+
+      <div class="row">
+        <div class="card">
+          <p>
+            <span>"</span> <span>Our vision as a firm is to be the leading real estate firm providing affordable 
+              home ownership and asset banking solutions in Nigeria. </span> <span>"</span>
+          </p>
+        </div>
+      <div class="row">
+        <div class="card">
+          <h3>Asset Banking</h3>
+          <p>
+            Real estate is an asset class that is in ever increasing demand and
+            thus makes it an ever-appreciating asset. Real estate does not only
+            appreciate over time, it also ensures a smooth source of cashflow.
+            Asset banking provides you with the opportunity to bank your money
+            on a fixed and ever appreciating asset. This ensures that your money
+            beats inflation while retaining its liquidity. The money left in the
+            bank can lose value over time but money saved against a real asset
+            will appreciate in value as the asset appreciates. Click here to see
+            our asset banking options
+          </p>
+        </div>
+       
+      </div>
+
+      <div class="row">
+        <div class="card">
+          <h3>Propa-Own</h3>
+          <p>
+            Nigeria have about 16 million housing deficit and needs to invest
+            about 56 trillion Naira to close this gap. Home ownership is a major
+            need for every human as it is one of the most basic needs of the
+            human being. With this in mind we have through innovative and
+            creative product development come up with an easy, convenient and
+            safe way to make you a home owner. Through our rent to own, you can
+            become a home owner while you pay for the property monthly.
+           </p>
+           <div class="button"> <button class="btn" id="more-btn"> Check Eligibility</button></div>
+        </div>
+        <div class="propa-own-form-container"> 
+          <form action="https://formspree.io/f/mpzegqeg" method="post">
+          <h3>Check Eligibility Status</h3>
+          <input type="email" class="box" name="email" placeholder="Enter your mail">
+          <input type="name" class="box" name="name" placeholder="Enter your name">
+          <select class="box" name="Marital status">
+            <option value="0">Marital status</option>
+            <option value="Single">Single</option>
+            <option value="Single">Married</option>
+          </select>
+          <select class="box" name="Employment" >
+            <option value="0">Employment status</option>
+            <option value="Unemployed">Unemployed</option>
+            <option value="Employed">Employed</option>
+            <option value="Self employed">Self employed</option>
+            <option value="Business Owner">Business owner</option>
+          </select>
+          <input type="text" class="box" name="organization" placeholder="Name of organization">
+          <select class="box" name="rented-or-owned">
+            <option value="0">Do you live in a rented apartment ?</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No </option>
+          </select>
+          <select class="box" name="current-home-size">
+            <option value="0">What is the size of your current home?</option>
+            <option value="A room self contained">A room self contained</option>
+            <option value="A room and parlour">A room and parlour</option>
+            <option value="Two bedroom flat">Two bedroom flat</option>
+            <option value="Three or more bedrooms">Three or more bedrooms</option>
+          </select>
+          <input type="text" class="box" name="current-rent" placeholder="How much do you pay per annum ?">
+          <select class="box" name="home-ownership-interest">
+            <option value="0">Would you like to own your home?</option>
+            <option value="Yes">Yes</option>
+            <option value="Maybe">Maybe</option>
+            <option value="No">No</option>
+          </select>
+          <input type="text" class="box" name="preferred=location" placeholder="Which location would you like to live ?" />
+          <input type="submit" value="Submit" name="" class="btn" id="propa-own-btn" />
+          <input type="checkbox" id="remember" name="send-me-emails" />
+          <label for="remember">Subscribe to our email list</label>
+          
+        </form>
+       </div>         
+      </div>
+     <!---<div class="message-card">
+        <h3>Thank You</h3>
+        <p>Your response has been delivered. You will get the result of your eligibility test in your mail soon.</p>
+       </div>---> 
+
+      
+      <div class="row">
+        <div class="image">
+          <img src="/Images/valueproposition.svg" alt="" />
+        </div>
+        <div class="card">
+          <h3>Value Proposition</h3>
+          <p>
+            A. Wealth creation <br />
+            B. Convenience <br />
+            C. Security and safety of investment <br />
+            D. Ingenuity <br />
+            E. Provision of smart real estate solutions
+          </p>
+        </div>
+       
+      </div>
+    </section>
+
+    <!---About us section ends-->
+
+    <!---Choose us section starts-->
+   <div class="choose-container">
+    <section class="choose-us" id="why">
+      <h1 class="heading">
+        <span>w</span>
+        <span>h</span>
+        <span>y</span>
+        <span></span>
+        <span>c</span>
+        <span>h</span>
+        <span>o</span>
+        <span>o</span>
+        <span>s</span>
+        <span>e</span>
+        <span></span>
+        <span>u</span>
+        <span>s</span>
+      </h1>
+     <div class="row">
+      <div class="card">
+        <p>At Propatify, we help you become a home owner affordably. Propatify was born out of 
+          the core needs of the Nigerian real estate industry. We offer smart, tailor-fit 
+          solutions to your real estate needs; you have the freedom to grow your wealth as 
+          you wish. We offer a profitable and sustainable way of banking that protects your 
+          money from inflation. We offer innovative and creative real estate projects that 
+          ensure steady growth for the long term. We are scalable; You can start your real estate 
+          JOURNEY at the point you are.</p>
+      </div>
+     </div>
+
+     <div class="row">
+      <div class="card">
+        <h3>The Propatify advantage</h3>
+        <p>
+          Propatify does not only bring smart real estate solutions and options to you, we have also integrated 
+          technology with our offerings to ensure security, safety, convenient and transparent transactions for our 
+          customers. <br>
+          <br><span>The emerging market effect:</span> Propatify identifies highly profitable, serviceable markets (new or existing) 
+          to play in and with that we are sure of sustainable profits over the long term, a fast return on investment 
+          period and high returns on investment.<br>
+          <br><span>Innovation and creativity:</span> in as much as the real estate is an ever-growing and appreciating industry with 
+          continuous increased demand, there is need for smart innovations and creativity within the industry. 
+          We intentionally look for creative innovations that will disrupt the market in order to tap into the existing 
+          but under-services markets of the industry. This core value reflects in how we design, develop and deliver our 
+          products, services and offerings to meet your specific needs.<br>
+          <br><span>Value oriented:</span> as a core value of the firm, we are obsessed with creating real value that will solve real 
+          challenges in the industry. Our products reflect a distinct preference to value creation as our offerings 
+          are tailored to fit in the right spaces of the real estate industry with specificity to the Nigerian/African market.
+          </p>
+      </div>
+     </div>
+
+    </section>
+   </div>
+
+    <!---Choose us section ends-->
+
+    <!---Projects section starts-->
+  <section class="projects" id="projects">
+    <h1 class="heading">
+      <span>p</span>
+      <span>r</span>
+      <span>o</span>
+      <span>j</span>
+      <span>e</span>
+      <span>c</span>
+      <span>t</span>
+      <span>s</span>
+    </h1>
+<div class="row">
+  <div class="image">  
+    <img src="Images/NCHlogo3.png" alt="">
+  </div>
+  <div class="card">
+   
+    <p>We engage in special projects that speaks to specific sectors of the industry. proffering solutions to
+      these sectors and creating investment pathways for interested investors. <br> Propatify is particular about embarking on
+      creative and innovative projects. Currently our 
+      focus is actualizing <span>THE FIRST ON-CAMPUS ESTATE</span> in Nigeria. 
+      NAIJA CAMPUS HOMES (NCH) is targeted at providing quality and standard accommodation for minimum 1 million 
+      students across tertiary institutions in Nigeria.
+    </p>
+  </div>
+</div>
+  </section>
+  <!---Projects section ends-->
+
+  <!---Estates section starts-->
+<section class="propamart" id="propamart">
+  <h1 class="heading">
+    <span>P</span>
+    <span>r</span>
+    <span>o</span>
+    <span>p</span>
+    <span>p</span>
+    <span>a</span>
+    <span>m</span>
+    <span>a</span>
+    <span>r</span>
+    <span>t</span>
+   
+  </h1>
+<div class="box-container">
+  <div class="estate-container">
+    <div class="box">
+      <img src="Images/palmrichestate.jpg" alt="">
+      <h3>Palm Rich Estate</h3>
+   
+      <div class="content">
+        <p>Palm Rich estate is a unique estate concept conceived by Flapcoop which starts as s palm trees farm
+          and later metamorphose into an exquisite estate like the Magodo or VGC estate of today which started 
+          from farm settlements. Palm Rich estate is free of any know encumbrances and have Certificate of Occupancy
+          as title. Our flexible payment optio ensures you can become a land owner at Palm Rich Estate.
+        </p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price">₦90.00<span>₦120.00</span></div>
+        <a href="#" class="btn">book now</a>
+      </div>
+     
+    </div>
+  </div>
+  
+
+  <div class="box">
+    <img src="Images/Green City7.jpeg" alt="">
+    <h3>Green City Estate</h3>
+    <div class="content">
+      <p>Palm Rich estate is a unique estate concept conceived by Flapcoop which starts as s palm trees farm
+        and later metamorphose into an exquisite estate like the Magodo or VGC estate of today which started 
+        from farm settlements. Palm Rich estate is free of any know encumbrances and have Certificate of Occupancy
+        as title. Our flexible payment optio ensures you can become a land owner at Palm Rich Estate.</p>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price">₦90.00<span>₦120.00</span></div>
+      <a href="#" class="btn">book now</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="Images/Palmera.jpg" alt="">
+    <h3>Palmera Court</h3>
+    <div class="content">
+      <p>Palm Rich estate is a unique estate concept conceived by Flapcoop which starts as s palm trees farm
+        and later metamorphose into an exquisite estate like the Magodo or VGC estate of today which started 
+        from farm settlements. Palm Rich estate is free of any know encumbrances and have Certificate of Occupancy
+        as title. Our flexible payment optio ensures you can become a land owner at Palm Rich Estate.
+      </p>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price">₦90.00<span>₦120.00</span></div>
+      <a href="#" class="btn">book now</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="Images/real estate6.jpg" alt="">
+    <h3>Hill Top Estate</h3>
+    <div class="content">
+      <p>Palm Rich estate is a unique estate concept conceived by Flapcoop which starts as s palm trees farm
+        and later metamorphose into an exquisite estate like the Magodo or VGC estate of today which started 
+        from farm settlements. Palm Rich estate is free of any know encumbrances and have Certificate of Occupancy
+        as title. Our flexible payment optio ensures you can become a land owner at Palm Rich Estate.
+      </p>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price">₦90.00<span>₦120.00</span></div>
+      <a href="#" class="btn">book now</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="Images/SET-2-PRODUCT-BANNER-ILU-ASEYORI.png" alt="">
+    <h3>Ilu Aseyori</h3>
+    <div class="content">
+      <p>Palm Rich estate is a unique estate concept conceived by Flapcoop which starts as s palm trees farm
+        and later metamorphose into an exquisite estate like the Magodo or VGC estate of today which started 
+        from farm settlements. Palm Rich estate is free of any know encumbrances and have Certificate of Occupancy
+        as title. Our flexible payment optio ensures you can become a land owner at Palm Rich Estate.
+      </p>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price">₦90.00<span>₦120.00</span></div>
+      <a href="#" class="btn">book now</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="Images/palmfortuneestate.jpg" alt="">
+    <h3>Palm Fortune Estate</h3>
+    <div class="content">
+      <p>Palm Rich estate is a unique estate concept conceived by Flapcoop which starts as s palm trees farm
+        and later metamorphose into an exquisite estate like the Magodo or VGC estate of today which started 
+        from farm settlements. Palm Rich estate is free of any know encumbrances and have Certificate of Occupancy
+        as title. Our flexible payment optio ensures you can become a land owner at Palm Rich Estate.
+      </p>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price">₦90.00<span>₦120.00</span></div>
+      <a href="#" class="btn">book now</a>
+    </div>
+  </div>
+</div>
+  
+</section>
+
+  <!---Estates section ends-->
+
+  <!---ads section starts-->
+  <section class="ads" id="ads">
+    <div class="swiper ads-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Images/NCH FrontView.jpg" alt="">
+          </div>
+        </div>
+       
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Images/NCH FrontView.jpg" alt="">
+          </div>
+        </div>
+      
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Images/NCH FrontView.jpg" alt="">
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!---ads section ends-->
+
+   <!---review section starts-->
+   <section class="review" id="review">
+    <h1 class="heading">
+      <span>r</span>
+      <span>e</span>
+      <span>v</span>
+      <span>i</span>
+      <span>e</span>
+      <span>w</span>
+    </h1>
+
+    <div class="swiper review-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="/Images/profile.png" alt="" />
+            <h3>Bose Odumodu</h3>
+            <p>
+              I stay abroad and i needed a trustworthy company to help me with my real estate investment portfolio, 
+              I came across an ad from Propatify and I got the most amazing service ever.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+         </div>
+
+         <div class="swiper-slide">
+          <div class="box">
+            <img src="/Images/profile.png" alt="" />
+            <h3>Yahaya Ibrahim</h3>
+            <p>
+              I would recommend Propatify to anyone looking to buy property in Nigeria, they gave me flexibility of payment, 
+              a wide range of options and a secured transaction.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+         </div>
+
+         <div class="swiper-slide">
+          <div class="box">
+            <img src="/Images/profile.png" alt="" />
+            <h3>Chinneye Fredrick</h3>
+            <p>
+              I was able to grow my real estate income fron=m zero to 6 figures, thanks to Propatify's smart investment options. 
+              Thank you guys.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+         </div>
+
+         <div class="swiper-slide">
+          <div class="box">
+            <img src="/Images/profile.png" alt="" />
+            <h3>Sadiq Momodu</h3>
+            <p>
+              Going through the hassle of finding the perfect property and investment option in real estate can be cumbersome,
+              but with these guys, I was relaxed and able to make informed decisions on which properties to buy per time.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+         </div>
+        </div>
+   </section>
+
+    <!---review section ends-->
+
+     <!--Contact Section starts-->
+
+     <section class="contact" id="contact">
+      <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="/Images/contact-image.svg" alt="" />
+        </div>
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="Number" />
+            <input type="text" placeholder="Subject" />
+          </div>
+          <textarea
+            placerholder="message"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" class="btn" value="send message" />
+        </form>
+      </div>
+    </section>
+<!--Contact Section ends-->
+
+<!--Brands Section starts-->
+
+<section class="brand-container">
+  <div class="swiper brand-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/Images/Propatify-logo.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/Images/Propatify-logo.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/Images/Propatify-logo.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/Images/Propatify-logo.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/Images/Propatify-logo.png" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Brands Section ends-->
+
+<!--Footer-->
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3>Office Addres</h3>
+      <p>
+        9, Anuoluwapo street, bamako estate, Omole, ojodu-berger, Berger, Lagos.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Contact Us</h3>
+      <a href="#">Tel: +2348180016757, <br> +2348115068654</a>
+      <a href="#">Email: info@propatify.com.ng <br> propatify@gmai.com</a>
+      <a href="#">Nigeria</a>
+  
+    </div>
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="#home">home</a>
+      <a href="#about">About Us</a>
+      <a href="#why">Why choose Us</a>
+      <a href="#projects">Projects</a>
+      <a href="#Propmart">PropaMart</a>
+      <a href="#review">review</a>
+      <a href="#contact">contact</a>
+    </div>
+    <div class="box">
+      <h3>follow us</h3>
+      <a href="#">instagram</a>
+      <a href="#">facebook</a>
+      <a href="#">twitter</a>
+      <a href="#">linkedIn</a>
+    </div>
+  </div>
+  <h1 class="credit">
+    created by <span>Visurge Solutions</span> | all rights reserved
+  </h1>
+</section>
+<!--Footer-->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="propatify.js"></script>
+  </body>
+</html>

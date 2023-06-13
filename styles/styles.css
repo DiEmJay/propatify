@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&display=swap');
+
+:root{
+    --orange:#ffa500;
+    --lightgreen:rgba(107, 176, 107, 0.397);
+    --green:rgb(40, 86, 40);
+    --white:#fff;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+*::selection{
+background: var(--orange);
+color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 2rem 9%;
+    margin-bottom: 5rem;
+   
+}
+
+/* Header starts*/ 
+
+.heading{
+    text-align: center;
+    padding: 1.5rem 0 ;
+   
+}
+.heading span{
+    font-size: 3.5rem;
+    background: var(--lightgreen);
+    color: var(--green);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    display: inline-block;
+}
+.heading span .space{
+    background: none;
+}
+.btn{
+    display: inline;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+.btn:hover{
+    background: #fff;
+    color: var(--orange);
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    }
+    
+    header .logo img{
+       width: 30rem;
+       border-left: 15rem;
+    }
+    header .navbar a{
+        color: #fff;
+        font-size:2rem;
+        margin: 0 .8rem;
+    }
+    header .navbar a:hover{
+        color: var(--orange);
+    }
+    header .icons i{
+        font-size: 2.5rem;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+    header .icons i:hover{
+        color: var(--orange);
+    }
+    .login-form-container{
+        position: fixed;
+        top: -120%; left: 0;
+        z-index: 10000;
+        min-height: 100vh;
+        width: 100%;
+        background: rgba(0,0,0,.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .login-form-container.active{
+        top: 0;
+    }
+    .login-form-container form{
+        margin: 2rem;
+        padding: 1.5rem 2rem;
+        border-radius: .5rem;
+        background: #fff;
+        width: 50rem;
+    }
+    .login-form-container form h3{
+        font-size: 3rem;
+        color: #444;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .login-form-container form .box{
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.7rem;
+        color: #333;
+        margin: .6rem 0;
+        border: .5rem solid rgba(0,0,0,.3);
+        text-transform: none;
+    }
+    .login-form-container form .box:focus{
+        border-color: var(--orange);
+    }
+    .login-form-container form #remember{
+        margin: 2rem 0;
+    }
+    .login-form-container form label{
+        font-size: 1.5rem;
+    }
+    .login-form-container form .btn{
+       display: block;
+       width: 100%;
+    }
+    .login-form-container form p{
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        color: #666;
+    }
+    .login-form-container form p a{
+        color: var(--orange);
+    }
+    .login-form-container form p a:hover{
+        color: #333;
+        text-decoration: underline;
+    }
+    .login-form-container #form-close{
+        position: absolute;
+        top: 2rem; right: 3rem;
+        font-size: 3rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    #menu-bar{
+        color: #fff;
+        border:1rem solid #fff;
+        border-radius: .5rem;
+        font-size: 3rem;
+        padding: .5rem 1.2rem;
+        cursor: pointer;
+        display: none;
+    }
+
+/* Header ends*/     
+
+/* Home starts*/
+
+    .home{
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        position: relative;
+        z-index: 0;
+    }
+    .home .content{
+        text-align: center;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 0.3rem .5rem rgba(0,0,0,.1);
+    }
+    .home .content p{
+        font-size: 2.5rem;
+        color: #fff;
+        padding: .5rem 0;
+        margin-bottom: 1rem;
+    }
+    
+    .home .video-container video{
+        position: absolute;
+        top: 0; left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .home .controls{
+        padding: 1rem;
+        border-radius:5rem;
+        background: rgba(0,0,0,.7);
+        position: relative;
+        top: 10rem;
+    }
+    .home .controls .vid-btn{
+        height: 2rem;
+        width: 2rem;
+        display: inline-block;
+        border-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+        margin: 0.5rem;
+    }
+    .home .controls .vid-btn.active{
+        background: var(--orange);
+    }
+    .slider {
+        overflow: hidden;
+        align-items: center;
+      }
+      .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 60s slider infinite;
+        
+      }
+      .slider figure div {
+        width: 20%;
+        float: left;
+        align-items: center;
+       
+      }
+      .slider figure h3{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10rem;
+       
+      }
+      .slider figure p{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10rem;
+        background: #666;
+        border-radius: 20%;
+      }
+      .slider figure .slider-content h3{
+        color: var(--orange);
+      }
+      @keyframes slider {
+        0% {
+          left: 0;
+        }
+        25% {
+          left: 0;
+        }
+        
+        50% {
+            left: -100%;
+          } 
+        75% {
+          left: -200%;
+        }
+        100% {
+          left: -300%;
+        }
+      
+      }
+
+/* Home ends*/       
+
+/* About us starts*/       
+
+    .about .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5.5rem;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .about .row .image{
+        flex: 1 1 40rem;
+    }
+    .about .row .image img{
+        width: 100%;
+        border-radius: 3rem;
+    }
+    .about .row .card{
+        flex: 1 1 40rem;
+        padding: 2rem;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+        border-radius: 2.5rem;
+        width: 90%;
+        padding-bottom: 5rem;
+    }
+   
+    .about .row .card h3{
+        width: 100%;
+        font-size: 3.3rem;
+        color: #333;
+        text-transform: none;
+        text-align: center;
+        
+    }
+    .about .row .card p{
+        font-size: 2rem;
+        padding: 5rem 3rem;
+        color:#666;
+        text-align: justify;
+        line-height: 3rem;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+    .about .row .card span{
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    .about .row .card .button{
+        display:flex;
+        justify-content: center;
+    }
+    .propa-own-form-container{
+        position: fixed;
+        top: -120%; left: 0;
+        z-index: 10000;
+        min-height: 100vh;
+        width: 100%;
+        background: rgba(0,0,0,.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         
+    }
+    .propa-own-form-container.active{
+        top: 0;
+    }
+    .propa-own-form-container form{
+        margin: 2rem;
+        padding: 1.5rem 2rem;
+        border-radius: .5rem;
+        background: #fff;
+        width: 50rem;  
+        overflow-y: auto;
+        max-height: 100vh;
+       
+    }
+    .propa-own-form-container form h3{
+        font-size: 3rem;
+        color: #444;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .propa-own-form-container form .box{
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.7rem;
+        color: #333;
+        margin: .6rem 0;
+        border: .5rem solid rgba(0,0,0,.3);
+        text-transform: none;
+    }
+    .propa-own-form-container form .box:focus{
+        border-color: var(--orange);
+    }
+    .propa-own-form-container form #remember{
+        margin: 2rem 0;
+    }
+    .propa-own-form-container form label{
+        font-size: 1.5rem;
+    }
+    .propa-own-form-container form .btn{
+       display: block;
+       width: 100%;
+    }
+    .propa-own-form-container form p{
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        color: #666;
+    }
+    .propa-own-form-container form select {
+        color: #666;
+    }
+    .propa-own-form-container form p a{
+        color: var(--orange);
+    }
+    .propa-own-form-container form p a:hover{
+        color: #333;
+        text-decoration: underline;
+    }
+    .propa-own-form-container #form-close{
+        position: absolute;
+        top: 2rem; right: 3rem;
+        font-size: 3rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    .message-card{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+        border-radius: 2.5rem;
+        width: 50rem;
+        height:20rem;
+        align-items: center;
+        
+    }
+    /*.message-card h3{
+        font-size: 2.5rem;
+        display: block;
+    }
+    .message-card p{
+        font-size: 1.7rem;
+        display: block;
+        text-align: justify;
+        padding-top: 5rem;
+      
+    }  */
+
+/* About Us ends*/     
+
+/* Choose us starts*/ 
+
+    .choose-us .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5.5rem;
+        align-items: center;
+        margin-top: 5rem;
+        z-index: 100;
+    }
+    .choose-us .row .card{
+        flex: 1 1 40rem;
+        padding: 2rem;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+        border-radius: 2.5rem;
+        width: 90%;
+        padding-bottom: 5rem;
+        z-index: 100;
+        background: #333;
+    }
+   
+    .choose-us .row .card p{
+        font-size: 2rem;
+        padding: 5rem 3rem;
+        color:#666;
+        text-align: justify;
+        line-height: 3rem;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        color: #fff;
+    }
+    .choose-us .row .card h3{
+        font-size: 3rem;
+        color: #444;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 0;
+        color: var(--white);
+    }
+    .choose-us .row .card span{
+        font-size: 2.5rem;
+        color: var(--orange);
+    }
+
+    .choose-container{
+        background: var(--lightgreen);
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+/* Choose us starts*/     
+
+/* Project starts*/    
+
+    .projects .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5.5rem;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .projects .row .image{
+        flex: 1 1 40rem;
+    }
+    .projects .row .image img{
+        width: 100%;
+        border-radius: 3rem;
+    }
+    .projects .row .card{
+        flex: 1 1 40rem;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+        border-radius: 2.5rem;
+        width: 90%;
+        
+    }
+   
+    .projects .row .card h3{
+        width: 100%;
+        font-size: 3.3rem;
+        color: #333;
+        text-transform: none;
+        text-align: center;
+        
+    }
+    .projects .row .card p{
+        font-size: 2rem;
+        padding: 5rem 3rem;
+        color:#666;
+        text-align: justify;
+        line-height: 3rem;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+    .projects .row .card span{
+        color: var(--orange);
+        font-weight: 700;
+    }
+
+/* Project ends*/
+
+/* Propamart starts*/
+
+    .propamart .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .propamart .box-container .box{
+        overflow: hidden;
+        box-shadow: 0 1rem 2 rem rgba(0,0,0,.1);
+        border: 1rem solid #fff;
+        border-radius: .5rem;
+        flex: 1 1 30rem;
+        height: 48rem;
+        position: relative;
+    }
+    .propamart .box-container .estate-container{
+        overflow: hidden;
+        box-shadow: 0 1rem 2 rem rgba(0,0,0,.1);
+        border: 1rem solid #fff;
+        border-radius: .5rem;
+        flex: 1 1 30rem;
+        height: 50rem;
+        position: relative;
+    }
+
+    .propamart .box-container .box img{
+        height: 90%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 3rem;
+    }
+    .propamart .box-container h3{
+        font-size: 2.5rem;
+        color: var(--orange);
+        
+    }
+   
+    .propamart .box-container .content{
+        position: absolute;
+        top: -100; left: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        background: rgba(0,0,0,.9);
+        padding: 2rem;
+        border-radius: 3rem;
+    }
+    .propamart .box-container .box:hover .content{
+        top: 0;
+        transition: .3s linear;
+        transform: translateY(.3s ease-in);
+    }
+    .propamart .box-container .box .content p{
+        font-size: 1.5rem;
+        color: var(--orange);
+        padding: .5rem 0;
+        line-height: 2.5rem;
+        text-align: justify;
+    }
+/* Propamart ends*/
+
+/* Ads banner strats*/
+
+    .ads-slider{
+        padding-bottom: 2rem;
+    }
+    .ads-slider .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    }
+    .ads-slider .box img{
+        height: 40rem;
+        width: 40rem;
+        border-radius: 10%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
+/* Ads banner ends*/
+
+/* Review starts*/
+
+    .review .review-slider{
+        padding-bottom: 2rem;
+    }
+    .review .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    }
+    .review .box img{
+        height: 13rem;
+        width: 13rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+    .review .box h3{
+        color: #333;
+        font-size: 2.5rem;
+    }
+    .review .box p{
+        color: #666;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        text-transform: none;
+    }
+    .review .box .stars i{
+        color: var(--orange);
+        font-size: 1.7rem;
+    }
+
+/* Review ends*/
+
+/* Contact starts*/
+
+    .contact .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .contact .row .image{
+    flex: 1 1 35rem;
+    }
+    .contact .row .image img{
+        width: 100%;
+    }
+    .contact .row form{
+        flex: 1 1 50rem;
+        padding: 2rem;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+        border-radius: .5rem;
+    }
+    .contact .row form .inputBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .contact .row form .inputBox input, .contact .row form textarea{
+        width: 49%;
+        margin: 1rem 0;
+        padding: 1rem;
+        font-size: 1.7rem;
+        color: #333;
+        background: #f7f7f7;
+        text-transform: none;
+    }
+    .contact .row form textarea{
+        height: 15rem;
+        resize: none;
+        width: 100%;
+    }
+
+/* Contact ends*/
+
+/* Brand starts*/
+
+    .brand-container{
+        text-align: center;
+    }
+    .swiper-slide img{
+        width: 15rem;
+        height: 10rem;
+    }
+
+/* Brands ends*/
+
+/* Footer starts*/
+
+    .footer{
+        background:#333;
+    }
+    .footer .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .footer .box-container .box{
+        padding: 1rem 0;
+        flex: 1 1 25rem;
+    }
+    .footer .box-container .box h3{
+        font-size: 2.5rem;
+        padding: .7rem 0;
+        color: #fff;
+    }
+    .footer .box-container .box p{
+        font-size: 1.5rem;
+        padding: .7rem 0;
+        color: #eee;
+    }
+    .footer .box-container .box a{
+        display:block;
+        font-size: 1.5rem;
+        padding: .7rem 0;
+        color: #eee;
+    }
+    .footer .box-container .box a:hover{
+       color: var(--orange);
+       text-decoration: underline;
+    }
+    .footer .credit{
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: normal; 
+        color: #fff;
+        border-top: .1rem solid rgba(255,255,255,.2);
+    }
+    .footer .credit span{
+        color: var(--orange);
+    }
+
+ /* Footer ends*/
+    
+  /*Screen size starts*/
+
+
+    @media (max-width:1200px){
+        html{
+            font-size: 55%;
+        }
+    }
+    @media (max-width:991px){
+        header{
+            padding: 2rem;
+        }
+        section{
+            padding: 2rem;
+        }
+    }
+    @media (max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+    position: absolute;
+    top: 100%; right: 0;left: 0;
+    background: #333;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    padding: 3rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        background: #222;
+    }
+    }
+    @media (max-width:450px){
+        html{
+            font-size: 50%;
+        }
+        .heading span{
+            font-size: 1.9rem;
+        }
+        .contact .row form .inputBox input {
+            width: 100%;
+        }
+        .slider figure h3{
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5rem;
+        }
+        .slider figure p{
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5rem;
+        }
+       
+    }
+
+ /*Screen size ends*/
+
+
+
+
+
